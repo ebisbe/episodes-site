@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help with Episodes: transferring your library, backups, streaming availability, and reporting problems.">
+  <title>Support — Episodes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><a class="brand" href="index.html">Episodes</a><nav aria-label="Main navigation"><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a><a href="credits.html">Credits &amp; source</a></nav></header>
+  <main id="main" class="prose">
+    <h1>A little help with Episodes</h1>
+    <p class="notice">The Google Play release and its dedicated support mailbox are being prepared. You can use the public issue tracker below for general questions and bug reports.</p>
+    <h2>Report a problem</h2>
+    <p><a href="https://github.com/ebisbe/episodes-site/issues">Open a support issue</a> with your Android version, Episodes version, and the steps needed to reproduce the problem. The app version is shown in About.</p>
+    <p>Issues are public. Please leave out personal information, backup files, private notes and payment details. An email option for private support will be added before launch.</p>
+    <h2 id="migration">Move from the original F-Droid app</h2>
+    <ol>
+      <li>Keep the old app installed and use its backup/export command to save your library somewhere accessible.</li>
+      <li>Install the new Episodes app separately. Its application ID is <code>io.github.ebisbe.episodes</code>; the original is <code>com.redcoracle.episodes</code>.</li>
+      <li>In the new app, choose <strong>Restore from backup</strong> and select the exported file.</li>
+      <li>Check your shows, progress and notes before removing the old app. Configure your settings again as needed.</li>
+    </ol>
+    <p>Restore replaces the current library rather than merging two libraries. Back up the destination library first if it already contains shows. Historical backup formats are supported through schema migrations; keep the original file if an import fails and contact support. Builds using the previous development ID <code>com.ebisbe.episodes</code> also require this transfer.</p>
+    <h2>Back up before changing phones</h2>
+    <p>Use <strong>Back up library</strong> in the menu and choose a file location you control. Copy that file to your new phone or select it through your cloud-storage provider, then restore it. Manual backups contain personal notes and should be kept private. Android system backup may also help, but depends on your device settings.</p>
+    <h2>Find shows on your streaming services</h2>
+    <p>Set <strong>Settings → Watching country</strong>, then use the TV-shaped streaming-services button to select providers. It filters shows already in your library, using subscription availability from JustWatch via TMDB. Rentals and purchases are excluded, and an offer for a series does not guarantee every season is available.</p>
+    <h2>Information looks out of date?</h2>
+    <p>Use <strong>Refresh show</strong> to update a series. Archived shows have an <strong>Update information</strong> action and are excluded from scheduled and bulk updates. Settings controls automatic refresh and network restrictions. Opening previously saved information does not refresh it just because time has passed.</p>
+    <h2>Can I watch shows or connect Trakt?</h2>
+    <p>Episodes does not stream video and currently has no Trakt synchronization. It keeps a local record of your progress and provides file-based backup and restore.</p>
+    <h2>Purchases and refunds</h2>
+    <p>Once the app launches, the upfront purchase will be handled by Google Play. Reinstall using the Google account that bought the app. Refund requests follow <a href="https://support.google.com/googleplay/answer/2479637">Google Play's refund process</a>; this app has no subscription to cancel.</p>
+  </main>
+  <footer><nav aria-label="Footer"><a href="index.html">Home</a><a href="privacy.html">Privacy policy</a><a href="credits.html">Credits &amp; source</a></nav><p>Episodes · Maintained by ebisbe</p></footer>
+</body>
+</html>
